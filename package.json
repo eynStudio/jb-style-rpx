@@ -1,13 +1,13 @@
 {
   "name": "jb-style-rpx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --config=config/webpack.dev.js",
     "dist": "npm-run-all --parallel compile* --sequential prefix* minify*",
-    "compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/index.scss dist/jb-style-rpx.css",
+    "compile": "node-sass --include-path node_modules --output-style expanded --source-map true --source-map-contents true --precision 6 src/index.scss dist/jb-style-rpx.css",
     "prefix": "postcss --config build/postcss.config.js --replace \"dist/*.css\" \"!dist/*.min.css\"",
     "minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/jb-style-rpx.min.css dist/jb-style-rpx.css"
   },

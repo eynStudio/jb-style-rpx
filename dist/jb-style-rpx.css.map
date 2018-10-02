@@ -11,7 +11,7 @@
 		"../src/_utils.scss"
 	],
 	"sourcesContent": [
-		"@import 'variables';\n\n@import '../node_modules/jb-style/src/index.scss';\n\n@import 'utils';\n",
+		"@import 'variables';\n\n@import 'jb-style/src/index.scss';\n\n@import 'utils';\n",
 		"$white: #fff !default;\n$black: #000 !default;\n",
 		"@import 'variables';\n@import 'utils';\n",
 		"$white: #fff !default;\n$black: #000 !default;\n",
