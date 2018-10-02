@@ -1,0 +1,24 @@
+{
+	"version": 3,
+	"file": "jb-style-rpx.css",
+	"sources": [
+		"../src/index.scss",
+		"../src/_variables.scss",
+		"../node_modules/jb-style/src/index.scss",
+		"../node_modules/jb-style/src/_variables.scss",
+		"../node_modules/jb-style/src/_utils.scss",
+		"../node_modules/jb-style/src/utils/_text.scss",
+		"../src/_utils.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\n\n@import '../node_modules/jb-style/src/index.scss';\n\n@import 'utils';\n",
+		"$white: #fff !default;\n$black: #000 !default;\n",
+		"@import 'variables';\n@import 'utils';\n",
+		"$white: #fff !default;\n$black: #000 !default;\n",
+		"@import 'utils/text';\n",
+		".text-white {\n  color: $white !important;\n}\n",
+		""
+	],
+	"names": [],
+	"mappings": "AKAA,AAAA,WAAW,CAAC;EACV,KAAK,EJDC,IAAI,CICI,UAAU;CACzB"
+}
